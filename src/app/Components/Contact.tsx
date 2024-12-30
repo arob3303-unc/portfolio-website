@@ -4,9 +4,9 @@ import Swal from 'sweetalert2'
 
 const Contact = () => {
   
-  const onSubmit = async (event) => {
+  const onSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
-    const formData = new FormData(event.target);
+    const formData = new FormData(event.currentTarget);
 
     formData.append("access_key", "8ee2a40f-2f49-4fc8-a506-016b92d4c558");
 
@@ -34,7 +34,7 @@ const Contact = () => {
   return (
     <section className="contact">
         <form onSubmit={onSubmit}>
-            <h2>Contact Form</h2>
+            <h2>Contact Me!</h2>
             <div className="input-box">
                 <label>Full Name</label>
                 <input type='text' className='field' placeholder='Enter your name' name='name' required />

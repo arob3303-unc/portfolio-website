@@ -1,5 +1,6 @@
 import React from 'react';
 import './globals.css'; // Global styles
+import Image from "next/image";
 
 export default function Layout({ children }: { children: React.ReactNode }) {
   return (
@@ -19,19 +20,19 @@ export default function Layout({ children }: { children: React.ReactNode }) {
           {/* Github logo link*/}
           <div className='footer-images'>
             <a href='https://github.com/arob3303-unc' target='blank' rel='noopener noreferrer'>
-              <img
+              <Image
                 src='/Github.png'
                 alt='Github Link'
-                style={{width: '33px', height: 'auto', marginTop: '2px'}}
-              ></img>
+                width={30} height={30}
+              />
             </a>
             {/* Linkedin logo link*/}
             <a href='https://www.linkedin.com/in/austin-robinson-60617b296/' target='blank' rel='noopener noreferrer'>
-              <img
+              <Image
                 src='/Ln-pic.png'
                 alt='Linkedin Link'
-                style={{width: '33px', height: 'auto', marginTop: '2px'}}
-              ></img>
+                width={30} height={30}
+              />
             </a>
           </div>
 

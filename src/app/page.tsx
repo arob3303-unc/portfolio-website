@@ -1,6 +1,7 @@
 "use client";
 import Modal from './Components/Modal'
 import Contact from './Components/Contact'
+import Image from "next/image";
 
 const Home = () => {
   return (
@@ -24,7 +25,7 @@ const Home = () => {
             <h2 className='about-text'>I’m a passionate student exploring the intersection of economics and computer science, driven by a deep curiosity to understand how the world works. My interests lie in leveraging technology to solve meaningful problems, whether it’s unraveling complex systems or creating innovative solutions. I enjoy diving into challenges, learning new concepts, and applying them to make a positive impact.</h2>
           </div>
           <div className="about-image">
-            <img src="/me.jpeg" alt="AI" />
+            <Image src="/me.jpeg" alt="AI" height={300} width={300}/>
           </div>
         </div>
       </section>
